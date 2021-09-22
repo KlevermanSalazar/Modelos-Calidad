@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/*================================INTRODUCTION====================================*/
+.introduction{
+    height: 50vh;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.introduction h2{
+    color: #fff;
+    font-size: 3rem;
+}
+.introduction p{
+    height: 20vh;
+    width: 70vw;
+    color: #fff;
+    overflow: auto;
+}
+/*====================================NORMS=============================================*/
+.norms{
+    background-color: red;
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+}
+.norms h2{
+    color: #fff;
+    font-size: 3rem;
+}
+.norms p{
+    color: #fff;
+}
+/*===================================TYPES NORMS========================================*/
+.type-norms{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(7,25rem);
+    grid-gap: 3rem;
+}
+.norms-image{
+    height: 20vh;
+    width: 20vw;
+}
+.type__iso{
+    border: 1px solid #bbb;
+    box-shadow: 5px 5px 10px #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: .6s;
+}
+.type__iso:hover{
+    transform: scale(1.1);
+}
+.type__iso-1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.type__iso-2{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.type__iso-3{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.type__iso-4{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.type__iso-5{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+.type__iso-6{
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+.line-iso{
+    background-color: red;
+    grid-column: 1/3;
+    grid-row: 4/5;
+    height: 5vh;
+    width: 97vw;
+}
+.type__iso-2500n{
+    grid-column: 1/2;
+    grid-row: 5/6;
+}
+.type__iso-2501n{
+    grid-column: 2/3;
+    grid-row: 5/6;
+}
+.type__iso-2502n{
+    grid-column: 1/2;
+    grid-row:6/7;
+}
+.type__iso-2503n{
+    grid-column: 2/3;
+    grid-row: 6/7;
+}
+.type__iso-2504n{
+    grid-column: 1/2;
+    grid-row:7/8;
+}
+.type__iso-25099n{
+    grid-column: 2/3;
+    grid-row: 7/8;
+}
