@@ -20,6 +20,11 @@
     color: #fff;
     overflow: auto;
 }
+.svg-hero{
+    position: absolute;
+    top: 28rem;
+    width: 97vw;
+}
 /*====================================NORMS=============================================*/
 .norms{
     background-color: red;
@@ -33,6 +38,12 @@
 }
 .norms p{
     color: #fff;
+}
+.svg-hero-norm{
+    transform: rotate(180deg);
+    position: absolute;
+    top: 20rem;
+    width: 97vw;
 }
 /*===================================TYPES NORMS========================================*/
 .type-norms{
@@ -111,4 +122,49 @@
 .type__iso-25099n{
     grid-column: 2/3;
     grid-row: 7/8;
+}
+/*======================================SPICE==================================*/
+.spice{
+    background-color: red;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.spice p{
+    height: 30vh;
+    width: 40vw;
+    overflow: auto;
+    border: 1px solid #009;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+/*=========================CMMI================================================*/
+.cmmi{
+    background-color: #090;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.levels__cmmi{
+    background-color: red;
+    display: flex;
+    justify-content: center;
+}
+.type__cmmi{
+    margin: 1rem 0rem;
+    border: 1px solid #bbb;
+    box-shadow: 5px 5px 10px #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: .6s;
+}
+.cmmi-logo{
+    height: 25vh;
+    width: 40vw;
+    border: none;
+    border-radius: 50%;
 }
