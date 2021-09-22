@@ -138,7 +138,7 @@
     border-radius: 1rem;
     padding: 1rem;
 }
-/*=========================CMMI================================================*/
+/*=================================CMMI================================================*/
 .cmmi{
     background-color: #090;
     color: #fff;
@@ -167,4 +167,60 @@
     width: 40vw;
     border: none;
     border-radius: 50%;
+}
+/*=============================ASIDE=====================================*/
+aside{
+    height: 40vh;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aside__form{
+    height: 35vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.aside__form label{
+    color: #fff;
+}
+.form__btn{
+    padding: .5rem 1.2rem;
+    border: none;
+    border-radius: .2rem;
+    background-color: #009;
+    color: #fff;
+}
+/*=============================FOOTER====================================*/
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.footer__copyright{
+    color: #009;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.medias{
+    width: 40vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.medias img{
+    height: 10vh;
+    width: 5vw;
+    transition: 1s;
+}
+.medias img:hover{
+    transform: scale(1.5);
 }
