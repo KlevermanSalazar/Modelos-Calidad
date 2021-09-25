@@ -1,10 +1,58 @@
+:root{
+    --primary:#008eea;
+    --secundary:#39a0ff;
+    --terciaty:#25f4e9;
+}
 *{
     box-sizing: border-box;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-/*================================INTRODUCTION====================================*/
+/*=================================ANIMATIONS==========================================*/
+@keyframes goTo{
+    0%{
+        transform: translate(0,0);
+    }
+    50%{
+        transform: translate(0,10px);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
+/*==================================HEADER============================================*/
+header{
+    width: 97vw;
+    background-color: var(--primary);
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+}
+.header__title{
+    width: 60vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #fff;
+}
+.header__image{
+    height: 10vh;
+    width: 10vw;
+}
+/*=================================NAVEGATION===========================================*/
+nav{
+    display: flex;
+    align-items: center;
+}
+.nav__image{
+    height: 10vh;
+    width: 10vw;
+}
+.nav__option{
+    display: none;
+}
+/*================================INTRODUCTION=========================================*/
 .introduction{
-    height: 50vh;
+    height: 60vh;
     background: url('../images/BackgroundIntroduction.png');
     background-size:cover;
     background-attachment: fixed;
@@ -29,10 +77,12 @@
 }
 /*====================================NORMS=============================================*/
 .norms{
-    background-color: red;
+    margin: 0 0 2rem 0;
+    background:var(--terciaty);
     display: flex;
     flex-direction:column ;
     align-items: center;
+    border-radius: 0 0 2rem 2rem;
 }
 .norms h2{
     color: #fff;
@@ -69,6 +119,7 @@
 }
 .type__iso:hover{
     transform: scale(1.1);
+    box-shadow: 5px 5px 10px var(--terciaty);
 }
 .type__iso-1{
     grid-column: 1/2;
@@ -120,27 +171,37 @@
 }
 /*======================================SPICE==================================*/
 .spice{
-    background-color: red;
+    margin: 3rem 0 0 0;
+    background:url('../images/backgroundSpice.png');
+    background-size:cover;
+    background-attachment: fixed;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
+.spice h2{
+    color: var(--primary);
+}
 .spice p{
     height: 30vh;
     width: 40vw;
+    padding: 1rem;
     overflow: auto;
     border: 1px solid #009;
     border-radius: 1rem;
-    padding: 1rem;
+    color: #fff;
+
 }
 /*=========================CMMI================================================*/
 .cmmi{
-    background-color: #090;
+    background:linear-gradient(to left,#39a0ff,#25f4e9);
     color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border: none;
+    border-radius:0 0 2rem 2rem;
 }
 .levels__cmmi{
     background-color: red;
@@ -155,7 +216,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    transition: .6s;
 }
 .cmmi-logo{
     height: 25vh;
@@ -183,17 +243,20 @@
 .models__image{
     height: 20vh;
     width: 15vw;
+    animation-name: goTo;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
 /*==================================ASIDE==============================================*/
 aside{
-    height: 40vh;
+    height: 30vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #000;
+    background-color:var(--primary);
 }
 aside .aside__form{
-    height: 30vh;
+    height: 28vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -205,9 +268,9 @@ aside .aside__form{
 .form__btn{
     padding: .3rem 1.2rem;
     border: none;
-    border-radius: .5rem;
+    border-radius:0rem 1rem 0 1rem;
     color: #fff;
-    background-color: #009;
+    background:linear-gradient(to left,#39a0ff,#25f4e9);
 }
 /*=======================================FOOTER====================================*/
 footer{
@@ -217,9 +280,10 @@ footer{
 }
 .footer__paragraph{
     font-size: .8rem;
+    color: var(--primary);
 }
 .medias{ 
-    width: 25vw;
+    width: 20vw;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
