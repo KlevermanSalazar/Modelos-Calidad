@@ -328,3 +328,52 @@ footer{
         align-items: center;
     }
 }
+/*================================PORTATIL MEDIA QUERY==========================================*/
+@media screen and (min-width:1280px){
+    /*==============GENERAL==========================*/
+    h2{
+        font-size:5rem;
+    }
+    p{
+        font-size: 1.2rem;
+    }
+    /*==============HEADER===========================*/
+    .header__title{
+        width: 30vw;
+    }
+    /*=============NAVEGATION========================*/
+    .nav__image{
+        display: none;
+    }
+    .nav__option{
+        width: 50vw;
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    /*===============ASIDE===========================*/
+    aside{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .aside__form{
+        width: 65vw;
+        display: flex;
+        flex-direction: row !important;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .aside__form label{
+        font-size: 1.3rem;
+    }
+    .form__btn{
+        padding: 1rem 2rem;
+        font-size: 1.2rem;
+    }
+    /*================FOOTER=========================*/
+    .medias{
+        width: 15vw;
+    }
+}
