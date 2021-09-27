@@ -311,3 +311,20 @@ footer{
     height: 5vh;
     width: 5vw;
 }
+/*================================TABLETS MEDIA QUERY==========================================*/
+@media screen and (min-width:767px){
+    header{
+        width: 97.5vw;
+    }
+    /*=================NAVEGATION=======================*/
+    .nav__option-visible{
+        width: 97.5vw;
+        top: 3rem;
+    }
+    /*================INTRODUCTION======================*/
+    .introduction{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
